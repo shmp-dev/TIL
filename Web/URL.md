@@ -35,3 +35,28 @@ FQDN（読：エフキューディーエヌ）とは
 `https://www.google.co.jp` の場合
 - `google.co.jp`はドメイン名
 - `www.google.co.jp`はFQDN
+
+## URI について
+> Uniform Resource Identifiers (統一リソース識別子、URI) は、ウェブ上の「リソース」を識別するために使用されます。
+> これらは一般的に HTTP リクエストの対象として使用され、その場合、URI は文書、写真、バイナリーデータなどの物理的なリソースの場所を表します。
+> URI は、HTML の <a> リンクの href など、他の場所で使用された場合、リソースを取得する以外の動作を起動するために使用することもできます。
+引用：[HTTP メッセージ - HTTP | MDN](https://developer.mozilla.org/ja/docs/Web/HTTP/Messages)
+
+### URL との違い
+URIはリソースを識別するための汎用的な概念であり、URLはそのURIの中で特にリソースの場所を示すものです。すべてのURLはURIの一部ですが、すべてのURIがURLであるわけではありません。
+
+#### URI（Uniform Resource Identifier）
+
+- 定義: URIは、インターネット上でリソースを一意に識別するための文字列です。リソースの場所（位置）だけでなく、そのリソース自体を識別する役割も持ちます。
+- 種類: URIには、URLやURN（Uniform Resource Name）が含まれます。URNはリソースの名前を識別するもので、場所に依存しません。
+- 例:
+  - mailto:info@example.com（メールアドレス）
+  - isbn:978-3-16-148410-0（本のISBN）
+
+#### URL（Uniform Resource Locator）
+
+- 定義: URLは、インターネット上でリソースの場所を特定するためのURIの一種です。リソースがどこにあるか（アクセス方法や場所）を示します。
+- 構成要素: URLは、プロトコル（例: http、https、ftp）やドメイン名、ポート番号、パス、クエリパラメータなどを含みます。
+- 例:
+  - https://www.example.com/index.html
+  - ftp://ftp.example.com/file.txt
