@@ -24,6 +24,32 @@ pick c447acc [DeepLink]DeepLink, Deferred DeepLink 関連の技術について
 1. エディタ（ターミナル）を閉じる
 2. `git rebase --abort`を実行
 
+## 一つのコミットを分割する手順
+直前のコミットを分割したい場合
+
+1. `git rebase -i HEAD~`で、Interactive Rebase を実行
+
+```
+pick 12345678 A
+```
+
+2. 対象のコミットを`edit`に変更してエディタを閉じる
+
+```
+edit 12345678 A
+```
+
+3. rebase の状態でワークスペースが操作可能になる
+   
+4. `git reset HEAD~`を実行し、コミットの内容をワーキングツリー（作業ディレクトリ）に戻す
+
+5. コミットを適切な形に再作成する
+   1. 元々一つのコミットだったファイル群を、いくつかのコミットに分割する
+
+6. `git rebase --continue` で、リベースを終了する
+
+※手順中に操作をミスした場合、`git rebase --abort`で中断すれば、rebase前の状態に戻る。
+
 ## 参考
 - https://qiita.com/syamobariyuta/items/dac76bd6c2821bbec080
 - https://dev.classmethod.jp/articles/squashing-multiple-commits-in-git/
