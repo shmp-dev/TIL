@@ -71,6 +71,8 @@ FQDN（読：エフキューディーエヌ）とは
 - `google.co.jp`はドメイン名
 - `www.google.co.jp`はFQDN
 
+![FQDN](./image/fqdn.drawio.png)
+
 ## URI について
 > Uniform Resource Identifiers (統一リソース識別子、URI) は、ウェブ上の「リソース」を識別するために使用されます。
 > これらは一般的に HTTP リクエストの対象として使用され、その場合、URI は文書、写真、バイナリーデータなどの物理的なリソースの場所を表します。
