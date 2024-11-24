@@ -1,5 +1,5 @@
-const initList = [0, 4, 0, 0, 0, 8, 10, 0];
-const inputList = [1, 2, 3, 5, 6, 7, 9]; // order
+const initList = [0, 0, 0, 0, 0, 2];
+const inputList = [1]; // order
 let fixList: number[] = [];
 let inputIndex = 0;
 
