@@ -24,3 +24,13 @@ jjを入力することでエスケープできる設定にしたが、日本語
 → NextAction
 一度emacsの方も検討してみる
 でも、lazy系のツールなどのようにvim操作が前提になっているツールが多い気がするので、vim派の方が良いかな
+
+# lazyvim の使い方
+
+まずlazyvim にはどんなプラグインがプリインストールされているのか気になる
+追って確認したい
+
+以下のサイトがとてもよかった
+- [lazyvimの操作方法 - zenn](https://zenn.dev/tositada/articles/b9190cce45812f)
+- [lazyvimのプラグイン管理](https://zenn.dev/vim_jp/articles/31e60fbf12712b)
+
